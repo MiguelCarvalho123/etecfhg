@@ -7,50 +7,120 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="icon" type="image/jpg" href="img/etec_ferrcio_humberto_gazzetta_logo.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </head>
 <body>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector('.form');
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity()) {
+          event.preventDefault(); // Prevenir Submissão Para Demonstrar o Alerta
+          alert('Sua Mensagem foi Enviada com Sucesso !');
+          form.reset(); // Limpar os Campos do Formulário
+        }
+      });
+    });
+  </script>
     <header>
         <div id="mrg">
             <h1>Etec Ferrucio Humberto Gazzeta</h1>
             <nav>
                 <ul>
                     <br>
-                    <li class="item"><a class="bi" href="#sobre">Sobre</a></li>
-                    <li><a class="bi" href="#servicos">Serviços</a></li>
+                    <li class="item"><a class="bi" href="#sobre">História</a></li>
+                    <li><a class="bi" href="#curso">Cursos</a></li>
                     <li><a class="bi" href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <section id="sobre">
-        <h2>Sobre Nós</h2>
+        <div class="container-fluid hist-mod">
+        <h2>Nossa História</h2>
+        <p>
+            <img src="img/etec-no-1.jpg" style="width: 38%; height: 40%;" class="rounded float-end" alt="...">
+            <br><br>
+            No 2º semestre de 2005, através de um convênio firmado entre o Centro Estadual de Educação Tecnológica "Paula Souza", a FAT - Fundação de Apoio a Tecnologia e a Prefeitura Municipal de Nova Odessa, tem início às atividades da Classe Descentralizada da ETEC Polivalente de Americana na cidade de Nova Odessa. Neste primeiro momento foram oferecidos 2 cursos técnicos: Técnico em Informática e Técnico em Segurança do Trabalho.
+            <br><br>
+            A então Classe Descentralizada passou a funcionar no prédio da EMEF "Dante Gazzetta", uma Escola Municipal de Ensino Fundamental localizada no centro de Nova Odessa.
+            <br><br>
+            Em 2007 a extensão passou a oferecer os cursos técnicos em Administração e Segurança do Trabalho, deixando assim de oferecer o curso de Informática.
+            <br><br>
+            No dia 03 de março de 2010, através do decreto do Governo do Estado, foi criada a Escola Técnica Estadual de Nova Odessa, no município de Nova Odessa, como a unidade de ensino 234 do Centro Estadual de Educação Tecnológica "Paula Souza" - CEETEPS.
+            <br><br>
+            A unidade recém-criada continuou funcionando provisoriamente na EMEF "Dante Gazzetta", até que em junho de 2010, a Prefeitura Municipal, após alugar um prédio, localizado à rua Theófilo Sniker, nº 38, no Parque Industrial Harmonia, realiza as reformas necessárias para que a ETEC de Nova Odessa transferisse as suas atividades para o novo espaço.
+            <br><br>
+            Com um número maior de salas de aula e laboratórios, a unidade aumenta a oferta de vagas à população local e da região, sendo que no 2º semestre de 2010 é implantado também o curso Técnico em Modelagem do Vestuário.
+            <br><br>
+            Neste mesmo período a ETEC de Nova Odessa, através do Plano de Expansão II do Governo do Estado, inicia novos cursos técnicos na E.E. Prof.ª Silvânia Aparecida Santos, localizada no bairro Santa Luiza II em Nova Odessa. A extensão oferece à comunidade, no 2º semestre de 2010, o curso Técnico em Logística e a partir do 2º semestre de 2011 o curso Técnico em Contabilidade.
+            <br><br>
+            Em 2012, novo Curso: Técnico em Informática Integrado ao Ensino Médio - ETIM, funcionando em período integral. No ano de 2014, a Unidade oferece o Curso Técnico em Modelagem do Vestuário Integrado ao Ensino Médio e o Técnico em Transações Imobiliárias, sendo que esse último, na EE Silvania Aparecida Santos - Classe Descentralizada.
+            <br><br>
+            Em 2015, no 2.º Semestre, a Unidade Escolar amplia sua oferta de vagas, desta feita para o curso Técnico em Contabilidade na EE Silvania Aparecida Santos - Classe Descentralizada. No primeiro semestre de 2017, a ETEC inicia o Curso Técnico em Marketing Integrado ao Ensino Médio - ETIM. Escola Técnica Estadual Ferrúcio Humberto Gazzetta 3
+            <br><br>
+            Em outubro de 2017, ocorreu a mudança de prédio da nova sede da ETEC de Nova Odessa, agora localizada na Avenida São Gonçalo, 2770 - Jardim da Alvorada.
+            <br><br>
+            Em abril de 2018, deu-se a inauguração da nova sede da ETEC de Nova Odessa. No mês de outubro de 2018, os cursos de Técnico em Contabilidade, Técnico em Logística e Técnico em Transações Imobiliárias foram transferidos da Classe Descentralizada, para a nova Sede da ETEC de Nova Odessa, encerrando-se assim o Convênio do Centro Paula Souza com a Secretaria Estadual de Educação na Unidade prof. Silvânia Aparecida Santos.
+        </p>
+        </div>
     </section>
     
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
+    <section id="curso">
+        <div class="cursos">
+        <h2>Nossos Cursos</h2>
         <ul>
-            <li>Serviço 1</li>
-            <li>Serviço 2</li>
-            <li>Serviço 3</li>
+            <li>Administração</li>
+            <li>Marketing</li>
+            <li>Desenvolvimento de Sistemas</li>
+            <li>Recursos Humanos</li>
+            <li>Ciências Humanas e Sociais</li>
+            <li>Qualidade</li>
+            <li>Segurança do Trabalho</li>
         </ul>
-    </section>
+        </div>
+        <a href="https://www.vestibulinhoetec.com.br/unidades-cursos/escola.asp?c=214">
+            <button class="btn-div">Vestibulinho</button>
+        </a>
+        </section>
 
     <section id="contato">
         <div class="container">
-            <h2>Entre em Contato</h2>
-            <p>Endereço: Rua XYZ, nº 123, Cidade ABC</p>
-            <p>Telefone: (00) 1234-5678</p>
-            <p>Email: contato@empresa.com</p>
-            <form action="#">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+            <form name="form" class="form" method="get">
+                <h1>Formulário de Contato</h1>
+                <h2>Nos de Seu Feedback</h2>
+                <div class="mb-3">
+                  <label for="exampleInputName1" class="form-label">Nome</label>
+                  <input type="name" name="nome" class="form-control" id="exampleInputName1" placeholder="Nome da Silva"
+                    aria-describedby="nameHelp" autofocus required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="seuemail@gmail.com"
+                    aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputTel" class="form-label">Telefone</label>
+                  <input type="tel" name="tel" class="form-control" id="exampleInputTel1" maxlength="12" placeholder="(01) 23456-7890"
+                    aria-describedby="telHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputSub" class="form-label">Assunto</label>
+                  <input type="text" name="assunto" class="form-control" id="exampleInputSub1" placeholder="Gostei do Serviço !"
+                    aria-describedby="subHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                  <textarea class="form-control mensagem" id="exampleFormControlTextarea1" placeholder="Digite Sua Mensagem"
+                    rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-div2">Enviar</button>
+                &nbsp;
+                <button type="reset" class="btn-div1">Limpar</button>
+              </form>
         </div>
     </section>
 

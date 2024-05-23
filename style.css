@@ -1,3 +1,9 @@
+/*Código da divulgação da etec*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,7 +29,7 @@ header h1 {
 }
 #mrg{
     padding: 1%;
-    text-shadow: 2px 2px #098909;
+    text-shadow: 2px 2px #c90707;
 }
 nav ul {
     list-style-type: none;
@@ -79,7 +85,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-#mensagem{
+.mensagem{
     resize: none;
 }
 
@@ -94,4 +100,47 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+.hist-mod{
+    padding: 20px;
+}
+
+.btn-div{
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+
+.btn-div:hover {
+    background-color: #000000;
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.btn-div1{
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+.btn-div1:hover {
+    background-color: #000000;
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.btn-div2{
+    background-color: #f40404;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+.btn-div2:hover {
+    background-color: #b10808;
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.cursos{
+    margin-left: 3%;
 }
